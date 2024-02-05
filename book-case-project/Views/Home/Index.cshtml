@@ -1,0 +1,29 @@
+﻿ @model List<book_case_project.Models.Books>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <table class="table table-bordered">
+        <tr>
+            <th>Order</th>
+            <th>Book Name</th>
+            <th>Writer</th>
+        </tr
+
+        @foreach(var ki in Model)
+        {
+              <tr>
+                <td>@ki.ID</td>
+                <td>@ki.BookName</td>
+                <td>@ki.Writer</td>
+             </tr>
+        }
+
+
+    </table>
+
+</div>
+
+
